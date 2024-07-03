@@ -20,27 +20,6 @@ public class Anagram {
         }
         for (int res : lettersNumber) if(res != 0) return false;
 
-//        Map<String, Integer> a = new HashMap<>();
-//        Map<String, Integer> b = new HashMap<>();
-//
-//        a.put("a", 3);
-//        b.put("a", 3);
-//        b.put("b", 1);
-//        b.put("c", 1);
-//        b.put("d", 1);;
-//        a.put("b", 1);
-//        a.put("c", 1);
-//        a.put("d", 1);
-//        int counter = 0;
-//        for (int i = 0; i < a.size(); i++) {
-//
-//
-//            if(a.get(i).equals(b.get(i))){
-//                counter++;
-//            }
-//        }
-//        System.out.println(counter);
-
         return true;
     }
 }

@@ -10,17 +10,6 @@ public class SumTwoInt {
     }
     public static int[] twoSum(int[] nums, int target) {
 
-//        for (int i = 0; i < nums.length; i++) {
-//            for (int j = 0; j < nums.length; j++) {
-//
-//                if(i != j && nums[i] + nums[j] == target){
-//                    return new int[]{i, j};
-//                }
-//            }
-//            }
-//
-//        return new int[]{};
-
 
         HashMap<Integer, Integer> prevMap = new HashMap<>();
 
@@ -36,5 +25,11 @@ public class SumTwoInt {
         }
 
         return new int[] {};
+    }
+    public static int quarterOf(int month) {
+        // Your code here
+
+        return month <=3 ? 1 : month <=6 ? 2 : month <=9 ? 3 : 4;
+
     }
 }

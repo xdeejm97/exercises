@@ -1,6 +1,8 @@
 package neetcode;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class DuplicateInt {
     public static void main(String[] args) {
@@ -9,16 +11,14 @@ public class DuplicateInt {
 
     public static boolean hasDuplicate(int[] nums) {
 
-        boolean flag = false;
+        Set<Integer> arraySet = new HashSet<>();
         for (int i = 0; i < nums.length; i++) {
-
-            if (i+1 < nums.length && nums[i] == nums[i+1]) {
+            if(arraySet.contains(nums[i])){
                 return true;
-
             }
+            arraySet.add(nums[i]);
         }
-
-        return flag;
+        return false;
 
     }
 
