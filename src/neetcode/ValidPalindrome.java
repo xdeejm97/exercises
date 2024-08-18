@@ -2,7 +2,7 @@ package neetcode;
 
 public class ValidPalindrome {
     public static void main(String[] args) {
-        System.out.println(isPalindrome("kapec"));
+        System.out.println(isPalindrome("abc?"));
     }
 
     public static boolean isPalindrome(String s) {
