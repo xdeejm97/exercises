@@ -6,7 +6,7 @@ public class Main {
         Car car = new Car("volvo");
         Car car2 = new Car("volvo");
 
-        System.out.println(car.equals(car2));
+        System.out.println(car == car2);
 
     }
 }
