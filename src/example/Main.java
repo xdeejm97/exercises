@@ -17,5 +17,7 @@ public class Main {
         System.out.println(p);
         float m = 1/3;
 
+        Robot r = new Robot();
+
     }
 }
